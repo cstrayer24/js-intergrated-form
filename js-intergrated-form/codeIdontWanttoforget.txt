@@ -1,0 +1,28 @@
+window.onload = function(){
+   
+   const sub = document.getElementById('submit');
+   
+  
+  sub.addEventListener('click' ,function(input){
+
+     input = document.getElementById('textbox').value ;
+   const create = document.createElement('p');
+   
+ document.body.appendChild(create).append(input);
+   
+  })
+
+
+
+
+
+
+
+  
+     const button = document.getElementById('button');
+    button.addEventListener('click',function(){
+       const createElement = document.createElement('p');
+       document.body.appendChild(createElement).append('hello');
+        
+        });
+

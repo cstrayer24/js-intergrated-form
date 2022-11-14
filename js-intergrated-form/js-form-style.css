@@ -1,0 +1,18 @@
+*{
+
+    box-sizing: border-box;
+}
+
+
+div#wrapper{
+
+    display: flex;
+   
+}
+
+p{
+
+
+    display: block;
+   width: fit-content;
+}
