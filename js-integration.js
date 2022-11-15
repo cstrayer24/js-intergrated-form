@@ -42,6 +42,34 @@ const p = document.getElementsByTagName('p');
 
         wrapper.appendChild(document.createElement('p')).append(num3.innerText);
     });
+    num4.addEventListener('click',function(){
+
+        wrapper.appendChild(document.createElement('p')).append(num4.innerText);
+    });
+    num5.addEventListener('click',function(){
+
+        wrapper.appendChild(document.createElement('p')).append(num5.innerText);
+    });
+    num6.addEventListener('click',function(){
+
+        wrapper.appendChild(document.createElement('p')).append(num6.innerText);
+    });
+    num7.addEventListener('click',function(){
+
+        wrapper.appendChild(document.createElement('p')).append(num7.innerText);
+    });
+    num7.addEventListener('click',function(){
+
+        wrapper.appendChild(document.createElement('p')).append(num7.innerText);
+    });
+    num8.addEventListener('click',function(){
+
+        wrapper.appendChild(document.createElement('p')).append(num8.innerText);
+    });
+    num9.addEventListener('click',function(){
+
+        wrapper.appendChild(document.createElement('p')).append(num9.innerText);
+    });
     };
 
     typing();
@@ -69,8 +97,7 @@ const children = wrapper.childNodes;
 
 
 
-
-
+ 
 
 
 
