@@ -1,18 +1,10 @@
-*{
+th{
 
-    box-sizing: border-box;
+    text-align: center;
 }
 
+.col{
 
-div#wrapper{
-
-    display: flex;
-   
-}
-
-p{
-
-
-    display: block;
-   width: fit-content;
+    position: relative;
+    left:47%;
 }
