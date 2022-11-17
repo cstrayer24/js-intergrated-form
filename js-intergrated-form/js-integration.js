@@ -2,13 +2,42 @@
 const valuebox= document.querySelector('#noOfclicks');
 const main = document.querySelector('#main');
 
-let clicks = 0;
+var clicks = 0;
 
 let value = valuebox.textContent;
+const dubBtn = document.querySelector('#dubButton');
+
+let test = true;
+
+
+const addclicks = ()=>{
+
+    main.addEventListener('click',function(){
+
+
+        clicks++;
+       valuebox.textContent = clicks.toString();
+
+       if(clicks===1){
+   
+           dubBtn.style.backgroundColor='blue';
+           dubBtn.addEventListener('mouseout',function(){
+        
+
+            console.log('hi');
+
+           
+           })
+       };
+
+    });
+
+}
 
 
 
-class addclicks{
+addclicks();
+/*class addclicks{
 
 
 
@@ -21,7 +50,7 @@ class addclicks{
 
         main.addEventListener('click',function(){
         
-        clicks++;
+        clicks+=200;//for test
       valuebox.textContent = clicks.toString();
         console.log(clicks);
     });
@@ -38,16 +67,37 @@ class addclicks{
  
 
 
-class double{}
+class double{
+
+
+    constructor(){
+
+        this.dubBtn = dubBtn;
+        this.clicks = clicks;
+        
+      
+    }
+}
 
 
 
 class auto{}
 
 class clicker{
+constructor(){
 
+    new addclicks;
+    new double;
+}
 
 }
 
 
-new addclicks;
+new clicker;
+
+
+
+if(test=true && clicks>200){
+
+    alert('hi');
+}*/
