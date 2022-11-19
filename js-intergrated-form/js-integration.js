@@ -1,103 +1,36 @@
 
-const valuebox= document.querySelector('#noOfclicks');
+
+window.addEventListener('load',function(e){
+const clickDisplay = document.querySelector('#noOfclicks');
+let clicks  = 0;
 const main = document.querySelector('#main');
-
-var clicks = 0;
-
-let value = valuebox.textContent;
-const dubBtn = document.querySelector('#dubButton');
-
-let test = true;
+const doubler = document.querySelector('#dubButton');
+let doubled = false;
 
 
-const addclicks = ()=>{
+if (clicks>1) {
+  doubled===true;
+};
+ 
+if(doubled===true){
 
-    main.addEventListener('click',function(){
+    doubler.addEventListener('click',function(){
 
-
-        clicks++;
-       valuebox.textContent = clicks.toString();
-
-       if(clicks===1){
-   
-           dubBtn.style.backgroundColor='blue';
-           dubBtn.addEventListener('mouseout',function(){
-        
-
-            console.log('hi');
-
-           
-           })
-       };
+        clicks*=2;
+        clickDisplay.innerHTML = clicks.toString();
 
     });
-
-}
-
-
-
-addclicks();
-/*class addclicks{
+};
 
 
 
-    constructor(){
+main.addEventListener('click',function(){
+    
+    clicks++;
+    
+    
+    clickDisplay.innerHTML = clicks.toString();
 
-        this.main = main;
-        this.valuebox = valuebox;
-        this.clicks = clicks;
-        this.value = valuebox.textContent;
+});
 
-        main.addEventListener('click',function(){
-        
-        clicks+=200;//for test
-      valuebox.textContent = clicks.toString();
-        console.log(clicks);
-    });
-   
-
-
-
-}
-
- }
-
-
- 
- 
-
-
-class double{
-
-
-    constructor(){
-
-        this.dubBtn = dubBtn;
-        this.clicks = clicks;
-        
-      
-    }
-}
-
-
-
-class auto{}
-
-class clicker{
-constructor(){
-
-    new addclicks;
-    new double;
-}
-
-}
-
-
-new clicker;
-
-
-
-if(test=true && clicks>200){
-
-    alert('hi');
-}*/
+});
